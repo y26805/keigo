@@ -4,7 +4,7 @@
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
-An agent skill that turns casual, blunt, or fragmentary Japanese into natural business Japanese (敬語) — the kind you can paste straight into an email and send unchanged. Built as a [`SKILL.md`](SKILL.md), the portable skill format understood by Claude Code and other agent tools that support it.
+An agent skill that turns casual, blunt, or fragmentary Japanese into natural business Japanese (敬語) — the kind you can paste straight into an email and send unchanged. Built as a [`SKILL.md`](skills/keigo/SKILL.md), the portable skill format understood by Claude Code and other agent tools that support it.
 
 [See it](#see-it) · [Install](#install) · [Usage](#usage) · [Tones](#tones) · [Notes & limits](#notes--limits) · [License](#license)
 
@@ -32,7 +32,7 @@ gh skill install y26805/keigo
 npx skills add y26805/keigo
 ```
 
-**Manually:** copy `SKILL.md` into your tool's skills directory. No dependencies either way.
+**Manually:** copy `skills/keigo/SKILL.md` into your tool's skills directory. No dependencies either way.
 
 ## Usage
 
@@ -62,7 +62,7 @@ npx skills add y26805/keigo
 - Register adapts to audience: external messages get full keigo, internal/team messages are lighter.
 - Japanese in, Japanese out — this rewrites register, it doesn't translate.
 - `--tone` shapes formality and warmth, not content; it won't turn a refusal into an acceptance or vice versa.
-- See [SKILL.md](SKILL.md) for the full rewrite strategy, keigo rules, and model answers used to drive the rewrite.
+- See [SKILL.md](skills/keigo/SKILL.md) for the full rewrite strategy, keigo rules, and model answers used to drive the rewrite.
 
 ## License
 
